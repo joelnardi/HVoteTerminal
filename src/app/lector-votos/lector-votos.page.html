@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Lector de Votos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="full" color="dark" (click)="scanCode()"><ion-icon name="qr-scanner"></ion-icon>Escanear Voto</ion-button>
+</ion-content>
+
+<ion-card>
+  <ion-card-content>
+    <header>¿Es el resultado correcto?</header>
+    <div style="max-width: 35vh; overflow: hidden;">
+      <img src="assets/download.jpg">
+    </div>
+    <ion-card-title>Alberto Macri de Kirchner</ion-card-title>
+    <ion-card-subtitle>Presidente</ion-card-subtitle>
+    <ion-card-subtitle>Frente Renovador</ion-card-subtitle>
+    <section>
+      <ion-button color="success"><ion-icon name="checkmark-circle"></ion-icon>Si</ion-button>
+      <ion-button color="danger"><ion-icon name="close-circle"></ion-icon>No</ion-button>
+    </section>
+  </ion-card-content>
+</ion-card>
